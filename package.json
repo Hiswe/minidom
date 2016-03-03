@@ -1,0 +1,15 @@
+{
+  "name": "minidom",
+  "version": "0.0.1",
+  "description": "tiny wrapper around DOM api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "hiswe",
+  "license": "ISC",
+  "dependencies": {
+    "array.from": "^1.0.0",
+    "poser": "^1.2.0"
+  }
+}
