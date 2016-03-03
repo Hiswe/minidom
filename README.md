@@ -11,7 +11,7 @@ It's why it won't be published on NPM.
 there are a lot of good alternatives :)
 
 - [jQuery](https://www.npmjs.com/package/jquery)
-- [Dominus](https://github.com/bevacqua/dominus))
+- [Dominus](https://github.com/bevacqua/dominus)
 
 be aware that it only use basic DOM api:
 
@@ -30,12 +30,12 @@ be aware that it only use basic DOM api:
 
 ## animations
 
-use css animation with transitionEnd. (determining which transitionend event could be done with (transitionend-property)[https://www.npmjs.com/package/transitionend-property])
+use css animation with transitionEnd. (determining which transitionend event could be done with [transitionend-property](https://www.npmjs.com/package/transitionend-property)
 
 # Install
 
 ```
-npm install hiswe/minidom
+npm install hiswe/minidom -D
 ```
 
 in your front application
