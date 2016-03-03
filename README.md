@@ -27,6 +27,7 @@ be aware that it only use basic DOM api:
 
 - **XHR**: use [fetch API](https://fetch.spec.whatwg.org/) (use [fetch polyfill](https://www.npmjs.com/package/whatwg-fetch), need Promise support)
 - **Promise**: use [es6-promise](https://www.npmjs.com/package/es6-promise)
+- **Serialize a form**: use [form-serialize](https://www.npmjs.com/package/form-serialize)
 
 ## animations
 
@@ -38,6 +39,32 @@ use css animation with transitionEnd. (determining which transitionend event cou
 npm install hiswe/minidom -D
 ```
 
+## compile
+
+this libs means to be used with browserify + babelify + preset2015
+
+```
+npm install browserify babelify babel-preset-es2015 -D
+```
+
+```js
+var browserify    = require('browserify');
+var babelify      = require('babelify');
+
+b = browserify({
+  cache:        {},
+  packageCache: {},
+  debug:        true,
+  entries:      ['./front-app/index.js']
+});
+
+b.transform(babelify, {presets: ['es2015']})
+// …end of the build
+
+```
+
+## use
+
 in your front application
 
 ```js
@@ -46,6 +73,6 @@ import minidom from 'minidom';
 $('body').removeClass('no-js');
 ```
 
-## documentation
+# documentation
 
 see doc.md
